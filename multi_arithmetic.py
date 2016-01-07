@@ -43,10 +43,13 @@ def square(num_list):
     return result
 
 
-def cube(num1):
+def cube(num_list):
     """Returns the cube of the input."""
 
-    return num1 ** 3
+    result = []
+    for num in num_list:
+        result.append(num**3)
+    return result
 
 
 def power(num1, num2):
