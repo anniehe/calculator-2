@@ -8,7 +8,7 @@ def add(num_list):
 
 
 def subtract(num_list):
-    """Returns the second number subtracted from the first."""
+    """Takes first number, subtracts second, subtracts next until end of list, returns result."""
 
     result = num_list[0]
     for num in range(1, len(num_list)):
@@ -17,7 +17,7 @@ def subtract(num_list):
 
 
 def multiply(num_list):
-    """Multiplies the two inputs together."""
+    """Multiplies the inputs together."""
 
     result = 1
     for num in num_list:
@@ -26,7 +26,7 @@ def multiply(num_list):
  
 
 def divide(num_list):
-    """Divides the first input by the second, returning a floating point."""
+    """Takes first number, divides by second, divides by next until end of list, returns a floating point result."""
 
     result = float(num_list[0])
     for num in range(1, len(num_list)):
@@ -44,7 +44,7 @@ def square(num_list):
 
 
 def cube(num_list):
-    """Returns the cube of the input."""
+    """Returns a list of the cubes of the inputs."""
 
     result = []
     for num in num_list:
