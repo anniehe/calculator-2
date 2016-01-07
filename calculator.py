@@ -27,6 +27,9 @@ while True:
         print power(num1, num2)
     else:
         try:
+            """ Adding each number from input to a list that will be used to do calculations. 
+                Try/except is used to make sure inputs can be converted to integers.
+                """ 
             num_list = []
             for num in range(0, len(problem_pieces)-1):
                 num_list.append(int(problem_pieces[num+1]))
@@ -40,7 +43,7 @@ while True:
             elif operator == "*":
                 print multiply(num_list)
             elif operator == "/":
-                print divide(num1, num2)
+                print divide(num_list)
             elif operator == "square":
                 print square(num1)
             elif operator == "cube":

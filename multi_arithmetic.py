@@ -25,10 +25,13 @@ def multiply(num_list):
     return result
  
 
-def divide(num1, num2):
+def divide(num_list):
     """Divides the first input by the second, returning a floating point."""
 
-    return float(num1) / num2
+    result = float(num_list[0])
+    for num in range(1, len(num_list)):
+        result /= num_list[num]
+    return result
 
 
 def square(num1):
