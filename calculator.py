@@ -5,7 +5,7 @@ Using our arithmetic.py file from Exercise02, create the
 calculator program yourself in this file.
 """
 
-from arithmetic import *
+from multi_arithmetic import *
 
 
 # Your code goes here
@@ -27,15 +27,14 @@ while True:
         print power(num1, num2)
     else:
         try:
-            if len(problem_pieces) > 1:
-                num1 = int(problem_pieces[1])
-            if len(problem_pieces) > 2:
-                num2 = int(problem_pieces[2])
+            num_list = []
+            for num in range(0, len(problem_pieces)-2):
+                num_list[num] = int(problem_pieces[num+1])
         except ValueError:
             print "These are not valid inputs."
         else:
             if operator == "+":
-                print add(num1, num2)
+                print add(num_list)
             elif operator == "-":
                 print subtract(num1, num2)
             elif operator == "*":
