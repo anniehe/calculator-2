@@ -28,8 +28,8 @@ while True:
     else:
         try:
             num_list = []
-            for num in range(0, len(problem_pieces)-2):
-                num_list[num] = int(problem_pieces[num+1])
+            for num in range(0, len(problem_pieces)-1):
+                num_list.append(int(problem_pieces[num+1]))
         except ValueError:
             print "These are not valid inputs."
         else:
