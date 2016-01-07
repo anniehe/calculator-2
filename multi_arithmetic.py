@@ -1,10 +1,10 @@
 def add(num_list):
     """Returns the sum of the input integers."""
 
-    total = 0
+    result = 0
     for num in num_list:
-        total += num
-    return total
+        result += num
+    return result
 
 
 def subtract(num_list):
@@ -16,11 +16,14 @@ def subtract(num_list):
     return result
 
 
-def multiply(num1, num2):
+def multiply(num_list):
     """Multiplies the two inputs together."""
 
-    return num1 * num2
-
+    result = 1
+    for num in num_list:
+        result *= num
+    return result
+ 
 
 def divide(num1, num2):
     """Divides the first input by the second, returning a floating point."""
