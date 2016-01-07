@@ -10,9 +10,8 @@ from arithmetic import *
 
 # Your code goes here
 print "Welcome to the prefix calculator!"
-problem_pieces = [""]
 
-while problem_pieces[0] != "q":
+while True:
     problem = raw_input("> ")
     problem_pieces = problem.split(" ")
     operator = problem_pieces[0]
@@ -40,5 +39,7 @@ while problem_pieces[0] != "q":
             print power(num1, num2)
         elif operator == "mod":
             print mod(num1, num2)
+        elif operator == "q":
+            break
         else:
             print "That's not a valid operator."
