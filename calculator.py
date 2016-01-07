@@ -15,7 +15,6 @@ problem_pieces = [""]
 while problem_pieces[0] != "q":
     problem = raw_input("> ")
     problem_pieces = problem.split(" ")
-
     operator = problem_pieces[0]
     try:
         if len(problem_pieces) > 1:
