@@ -45,7 +45,7 @@ while True:
             elif operator == "/":
                 print divide(num_list)
             elif operator == "square":
-                print square(num1)
+                print square(num_list)
             elif operator == "cube":
                 print cube(num1)
             elif operator == "mod":

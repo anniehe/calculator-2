@@ -34,10 +34,13 @@ def divide(num_list):
     return result
 
 
-def square(num1):
-    """Returns the square of the input."""
+def square(num_list):
+    """Returns a list of the squares of the input."""
 
-    return num1 ** 2
+    result = []
+    for num in num_list:
+        result.append(num**2)
+    return result
 
 
 def cube(num1):
