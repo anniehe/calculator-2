@@ -4,15 +4,16 @@ def add(num_list):
     total = 0
     for num in num_list:
         total += num
-        # print num
-        # print total
     return total
 
 
-def subtract(num1, num2):
+def subtract(num_list):
     """Returns the second number subtracted from the first."""
 
-    return num1 - num2
+    result = num_list[0]
+    for num in range(1, len(num_list)):
+        result -= num_list[num]
+    return result
 
 
 def multiply(num1, num2):

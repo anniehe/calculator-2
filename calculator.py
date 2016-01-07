@@ -36,7 +36,7 @@ while True:
             if operator == "+":
                 print add(num_list)
             elif operator == "-":
-                print subtract(num1, num2)
+                print subtract(num_list)
             elif operator == "*":
                 print multiply(num1, num2)
             elif operator == "/":
