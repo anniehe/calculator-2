@@ -23,7 +23,7 @@ def multiply(num_list):
     for num in num_list:
         result *= num
     return result
- 
+
 
 def divide(num_list):
     """Takes first number, divides by second, divides by next until end of list, returns a floating point result."""
