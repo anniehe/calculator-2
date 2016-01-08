@@ -15,7 +15,7 @@ while True:
     problem = raw_input("> ")
     problem_pieces = problem.split(" ")
     operator = problem_pieces[0]
-    
+
     if operator == "pow":
         try:
             if len(problem_pieces) > 1:
@@ -27,9 +27,9 @@ while True:
         print power(num1, num2)
     else:
         try:
-            """ Adding each number from input to a list that will be used to do calculations. 
+            """ Adding each number from input to a list that will be used to do calculations.
                 Try/except is used to make sure inputs can be converted to integers.
-                """ 
+                """
             num_list = []
             for num in range(0, len(problem_pieces)-1):
                 num_list.append(int(problem_pieces[num+1]))
