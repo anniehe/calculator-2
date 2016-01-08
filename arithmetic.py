@@ -1,6 +1,6 @@
 def add(num1, num2):
     """Returns the sum of the two input integers."""
-    
+
     return num1 + num2
 
 
@@ -8,7 +8,7 @@ def subtract(num1, num2):
     """Returns the second number subtracted from the first."""
 
     return num1 - num2
-    
+
 
 def multiply(num1, num2):
     """Multiplies the two inputs together."""
@@ -26,17 +26,17 @@ def square(num1):
     """Returns the square of the input."""
 
     return num1 ** 2
-     
-         
+
+
 def cube(num1):
     """Returns the cube of the input."""
 
     return num1 ** 3
-     
+
 
 def power(num1, num2):
     """Raises the first integer to the power of the second integer and returns the value."""
-    
+
     return num1 ** num2
 
 
